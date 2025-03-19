@@ -1,0 +1,80 @@
+@charset "UTF-8";
+:root {
+  --bs-body-bg: var(--color-secundario);
+  --bs-body-color: var(--color-primario);
+  --color-fondo-blanco: white;
+  --color-fondo-oscuro: #d3d3d3;
+  --color-header: var(--color-fondo-blanco);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --color-primario: white;
+    --color-secundario: black;
+    --color-fondo-blanco: white; /* Fondo gris para tema oscuro */
+    --color-fondo-oscuro: #343a40;
+    --color-header: var(--color-fondo-dark);
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--color-secundario) !important;
+  color: var(--color-primario) !important;
+}
+
+header {
+  background-color: var(--color-header) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Cambiar el fondo de los elementos con la clase bg-gris en modo oscuro */
+  .bg--gris {
+    background-color: var(--color-fondo-oscuro) !important;
+  }
+}
+.carousel-item {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.5s ease-in-out;
+}
+
+.text__box {
+  padding: 1.5rem;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+
+.modificar--title {
+  transform: rotate(-10deg);
+  font-size: 10em;
+}
+.modificar--title--footer {
+  transform: rotate(-10deg);
+  font-size: 5em;
+}
+
+.card .__img-container {
+  overflow: hidden;
+  height: auto;
+}
+.card .__img-container img {
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+.card .__img-container img:hover {
+  transform: scale(1.1);
+}
+
+.menu__link {
+  font-size: 1.2rem; /* Tamaño de la letra más grande */
+  font-weight: bold; /* Letra en negrita */
+  margin-left: 1rem; /* Separación horizontal */
+  margin-right: 1rem; /* Separación horizontal */
+  text-transform: capitalize; /* Capitalizar cada palabra */
+}
+
+/*# sourceMappingURL=styless.css.map */

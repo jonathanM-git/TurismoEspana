@@ -1,0 +1,61 @@
+/* Formulario */
+@use "sass:map";
+@use "variables" as *;
+@use "mixins" as *;
+
+    body {
+      @include background-image("../../img/formulario/fondo.jpg",cover, center center, no-repeat,null,null);
+      background-attachment: fixed;
+      background-color: var(--color-secundario) !important;
+      color: var(--color-primario) !important;
+    }
+
+    header {
+      background-color: var(--color-header) !important;  // Aplicar el color blanco
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      /* Cambiar el fondo de los elementos con la clase bg-gris en modo oscuro */
+      .bg-gris {
+          background-color: var(--color-fondo-oscuro) !important;
+      }
+    }
+  
+    .content--container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .icons--container {
+      padding: 20px;
+      color: #333;
+    }
+  
+    .container--form {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    .icon--styles {
+      margin-bottom: 40px;
+      text-align: center;
+  
+      img {
+        max-width: 150px;
+      }
+  
+      h5 {
+        font-weight: bold;
+        font-size: x-large;
+        margin-top: 10px;
+      }
+    }
+  
+    .menu__link {
+      @include menu-style;
+    }
+  

@@ -1,0 +1,31 @@
+:root{
+    --tm_blue:#037bc0;
+    --tm_green:#8cbc00;
+}
+
+.bg-info{
+    background-color: #037bc0 !important;
+}
+.bg-success{
+    background-color: var(--tm_green) !important;
+}
+.bg-primary{
+    background-color: var(--tm_blue) !important;
+}
+
+@font-face {
+    font-family: "Playfair_Display";
+    src: url("/font/Playfair_Display.woff2");
+}
+
+/* *{
+    font-family: "Playfair_Display", 'Courier New', Courier, monospace;
+} */
+
+.slideFondo1-img{
+    filter: brightness(50%); /* Oscurecer la imagen de fondo */
+    height: 80vh; /* Altura completa de la ventana */
+    background-size: cover;
+    background-position: center;
+    transition: background 0.5s ease-in-out;
+}

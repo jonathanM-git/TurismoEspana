@@ -1,0 +1,51 @@
+// _mixins.scss
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin background-image($url, $size: cover, $bcposition: center, $repeat: no-repeat, $height: 92vh, $position:relative) {
+    background-image: url($url);
+  background-size: $size;
+  background-position: $bcposition;
+  background-repeat: $repeat;
+  height: $height;
+  position: $position;
+  }
+  
+
+  @mixin menu-style {
+    font-size: 1.2rem; /* Tamaño de la letra más grande */
+    font-weight: bold; /* Letra en negrita */
+    margin-left: 1rem; /* Separación horizontal */
+    margin-right: 1rem; /* Separación horizontal */
+    text-transform: capitalize; /* Capitalizar cada palabra */
+  }
+
+  @mixin videos-pages{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+
+  @mixin backgroundVideos-page{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @mixin modificar-title($rotate, $font-size) {
+    transform: rotate($rotate);
+    font-size: $font-size;
+  }
+  
+  @mixin subtitulo-centrar{
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  

@@ -1,0 +1,64 @@
+/* Variables y Mixins */
+@use "sass:map";
+@use "variables" as *;
+@use "mixins" as *;
+
+/* Naturaleza */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secundario) !important;
+  color: var(--color-primario) !important;
+}
+
+header {
+  background-color: var(--color-header) !important;  // Aplicar el color blanco
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Cambiar el fondo de los elementos con la clase bg-gris en modo oscuro */
+  .bg-gris {
+      background-color: var(--color-fondo-oscuro) !important;
+  }
+}
+
+  .background--container {
+    @include background-image("../../img/naturaleza/fondoNaturaleza.avif");
+  }
+
+
+  .centered--text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .modificar--title {
+    @include modificar-title(-10deg, 7em);
+    &--footer{
+      @include modificar-title(-10deg, 5em);
+    }
+  }
+
+  .text__subtitulo {
+    background-color: orange;
+
+    p {
+      padding: 10px 50px;
+    }
+  }
+
+  .centrar {
+    @include subtitulo-centrar;
+  }
+
+  .menu__link {
+    @include menu-style;
+  }
+

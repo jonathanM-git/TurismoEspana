@@ -1,0 +1,30 @@
+// _variables.scss
+$colores: (
+  "primario": #d9534f, 
+  "secundario": #f8f9fa, 
+  "fondo-dark": #343a40,
+  "fondo-light": white,
+  "fondo-grey": #d3d3d3,
+  "texto": black,
+  "sombra": rgba(0, 0, 0, 0.5),
+  "header-light": white,  // Color del header en modo claro
+  "header-dark": #d3d3d3  // Color del header en modo oscuro
+);
+
+:root {
+  --bs-body-bg: var(--color-secundario);
+  --bs-body-color: var(--color-primario);
+  --color-fondo-blanco: white;
+  --color-fondo-oscuro: #d3d3d3;
+  --color-header: var(--color-fondo-blanco); // Default header color (light)
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --color-primario: white;
+    --color-secundario: black;
+    --color-fondo-blanco: white; /* Fondo gris para tema oscuro */
+    --color-fondo-oscuro: #343a40;
+    --color-header: var(--color-fondo-dark);  // Cambiar el color del header en modo oscuro
+  }
+}

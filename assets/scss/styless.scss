@@ -1,0 +1,64 @@
+@use "sass:map";
+@use "variables" as *;
+@use "mixins" as *;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--color-secundario) !important;
+  color: var(--color-primario) !important;
+}
+
+header {
+  background-color: var(--color-header) !important;  // Aplicar el color blanco
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Cambiar el fondo de los elementos con la clase bg-gris en modo oscuro */
+  .bg--gris {
+      background-color: var(--color-fondo-oscuro) !important;
+  }
+}
+
+.carousel-item {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.5s ease-in-out;
+}
+
+.text__box {
+  padding: 1.5rem;
+  border-radius: 5px;
+  color: map.get($colores, "fondo-light");
+  text-align: center;
+}
+
+.modificar--title {
+  @include modificar-title(-10deg, 10em);
+  &--footer{
+    @include modificar-title(-10deg, 5em);
+  }
+}
+
+.card {
+  .__img-container {
+    overflow: hidden;
+    height: auto;
+
+    img {
+      transition: transform 0.3s ease;
+      width: 100%;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.menu__link {
+  @include menu-style;
+}
