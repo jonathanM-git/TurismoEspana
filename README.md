@@ -117,7 +117,7 @@ Si deseas contribuir, sigue estos pasos:
 5. Abre un Pull Request.
 
 ## Autor
-Desarrollado por **[Jonathan Minguez]**.
+Desarrollado por **[Jonathan Mínguez]**.
 Asignatura **[Desarrollo de interfaces]**.  
 
 ## Licencia

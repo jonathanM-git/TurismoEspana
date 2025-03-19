@@ -13,6 +13,18 @@
     background-color: var(--tm_blue) !important;
 }
 
+.color-icon-form{
+    color:rgb(128, 128, 128);
+}
+.color-icon-search{
+    color: orange;
+}
+.short-line-style{
+    width: 5%; 
+    border: 2px solid orange;
+}
+
+
 @font-face {
     font-family: "Playfair_Display";
     src: url("/font/Playfair_Display.woff2");
