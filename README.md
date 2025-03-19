@@ -74,6 +74,40 @@ Simplemente abre el archivo `index.html` en tu navegador o utiliza un servidor l
 - **Navegación Intuitiva**: Diferentes secciones organizadas en el menú.
 - **Bootstrap Integrado**: Mejora el diseño y la interactividad.
 
+## Descripción de las Páginas
+Resumen de las páginas del proyecto:
+
+1. **Página de Inicio (`index.html`)**: Presenta el sitio con imágenes destacadas y enlaces a secciones clave.
+2. **Arte y Cultura (`arteCultura.html`)**: Muestra obras y lugares culturales con imágenes y videos.
+3. **Turismo Urbano (`turismoUrbano.html`)**: Explora sitios icónicos con videos y un carrusel de provincias.
+4. **Naturaleza (`naturaleza.html`)**: Destaca paisajes y actividades al aire libre con imágenes y descripciones.
+5. **Gastronomía (`gastronomia.html`)**: Presenta platos típicos, recomendaciones y experiencias gastronómicas.
+6. **Formulario de Registro (`formulario.html`)**: Permite a los usuarios suscribirse para recibir información turística personalizada.
+
+## Principales Características de los Estilos
+- Uso de variables para colores y estilos.  
+- Mixins para reutilización de código.  
+- Diseño modular y escalable.  
+- Estructura clara con separación de estilos globales y específicos.  
+
+## Tema Oscuro / Claro
+El proyecto soporta modo oscuro y claro mediante `prefers-color-scheme`, ajustando colores de fondo, texto y otros elementos visuales.  
+
+## Recursos Gráficos
+- Imágenes y videos de fondo.  
+- Carruseles interactivos con transiciones suaves.  
+- Uso de sombras y efectos de escala en imágenes.  
+
+## Responsive Design
+- Uso de `flexbox` y `grid` para adaptabilidad.  
+- Diseño optimizado para distintos tamaños de pantalla.  
+
+## Consideraciones Generales
+- Se han aplicado buenas prácticas en la estructura SCSS.  
+- Se usa `@use` para la importación de módulos.  
+- Código organizado para facilitar la mantenibilidad y escalabilidad.  
+
+
 ## Contribución
 Si deseas contribuir, sigue estos pasos:
 1. Haz un fork del repositorio.
@@ -84,6 +118,7 @@ Si deseas contribuir, sigue estos pasos:
 
 ## Autor
 Desarrollado por **[Jonathan Minguez]**.
+Asignatura **[Desarrollo de interfaces]**.  
 
 ## Licencia
 Este proyecto está bajo la licencia MIT.
