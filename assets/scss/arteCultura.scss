@@ -45,3 +45,8 @@ header {
 .menu__link {
   @include menu-style;
 }
+
+// Estilos para el footer
+footer {
+  @include footer-style;
+}

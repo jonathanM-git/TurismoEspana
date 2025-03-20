@@ -98,4 +98,42 @@ header {
   text-transform: capitalize; /* Capitalizar cada palabra */
 }
 
+footer .modificar--title--footer {
+  font-family: "Satisfy", cursive;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+footer .text-center img {
+  width: 100%;
+}
+footer .container-fluid {
+  background-color: #0F1325;
+  color: #FFFFFF;
+}
+footer hr {
+  border: 1px solid grey;
+  width: 10%;
+}
+footer img[alt="Mapa de España"] {
+  height: 100px;
+  width: auto;
+}
+footer .col-4 img {
+  width: 25%;
+}
+footer .tamaño-footer {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+}
+footer .fab {
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+}
+footer .footer-link {
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+}
+
 /*# sourceMappingURL=gastronomiaEnologia.css.map */
